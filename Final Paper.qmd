@@ -1,0 +1,433 @@
+---
+date: April 5, 2024
+author:
+  - name: Arjun Premkumar
+title: Left Spends More?
+subtitle: An analysis of the budget spend of local government bodies for Marginalized sections in Kerala, India
+format: pdf
+pdf-engine: xelatex
+mainfont: Times New Roman
+fontsize: 12pt
+linestretch: 1.5
+bibliography: references.bib
+---
+# Introduction
+Historically, leftist political parties have been associated with larger welfare spending, especially aimed at the poorer marginalized sections of society. In a more globalized world, where labor and small businesses end up on the losing side, it was theorized there would be increased support for expanded welfare and a leftist swing. The early 2000s did have supporting cases for this 'compensation hypothesis' [@walter2010]. While this hypothesis has been explored on a national basis, the arena where people have a more direct voice in governance - the local governments, have not been heavily in focus.
+
+This study aims to test the hypothesis of leftist parties being more likely to spend on welfare of the marginalized, in the context of the local governments in the state of Kerala in India. It would examine whether the political leaning of the ruling coalitions at the local government level affects the budget being spent for marginalized communities within their respective constituencies.
+
+Globalization has drastically increased the inequality levels in India, reaching historically high levels recently with the top 1% having 22.6% of the income share and 40.1% of the wealth share [@Bharti2024]. The liberalization strategies started in the 1990s resulted in a major rollback of public spending, resulting in decreased spending in essential public goods like health and education. Decentralization, which also proliferated in the same timeframe in India, was touted as a measure to increase the efficiency of public provisioning. Thus, a difference in public provisioning by political leaning can have implications on voting preference formation not only in the local level, but also 'trickle up' to the state and national levels.
+
+The study collects data on the budgetary spend of all Panchayats (the rural local governance bodies) in Kerala, and separates the reported expenditure spent on Scheduled Castes (SC) and Scheduled Tribes (ST) - two of the most marginalized communities which are constitutionally recognized in India. It builds an econometric model relating the budget spend, the ruling party and the population in the local bodies, and estimates the relationship. The results of the study show a significant effect for the presence of leftist coalition ruling the local government bodies on the budget spent on welfare plans for SC and ST. This offers backing to the hypothesis of leftist government spending more on welfare even at the local government bodies. The results also indicate a strong effect of the population percentage of SCs and STs on the budget spent on their welfare. This may be due to the implementation of reservation policies in the local body elections, where SCs and STs are allocated a number of wards (divisions within the panchayat) according to their population within the panchayat.
+
+# Literature Review
+Decentralization of governance institutions has been touted from the 1990s as a solution to mitigating the power imbalance created in the government, thereby redistributing the power to local government institutions that are in direct contact with the governing population. Thus, they are the flagbearers of participatory governance, and have been heavily promoted by many international organizations like the World Bank, UN Habitat and the EU [@boulding2010]. One of the definitions of decentralization is "a process of empowerment of local populations by the empowerment of local governments" [@oommen04]. Thus, local governance institutions, by definition, are tasked with empowering their population and have implicit welfare intentions.
+
+In India, decentralization received a major push through the enactment of the 73rd and 74th amendments to the constitution in 1993. These amendments give the local governance institutions (called 'Panchayats') a mandate to prepare and implement plans for economic development and social justice. They also allow for the devolution of funds to the Panchayat level, which can then be utilized by these bodies to implement various projects [@venugopal2009]. In theory, this would mean that Panchayats have the ability to formulate welfare plans based on the felt needs of the communities, and the budget to implement them. Studies show mixed results on whether decentralization has been able to increase welfare of the populace or empower marginalized communities. In Kerala, the decentralization has had significant impact in the welfare distribution. For instance, Panchayats have been reported to spend more funds on poverty reduction than any previous investments in the same area [@vijayanand2001]. There were also gains in providing housing to the marginalized sections, and it has brought about a culture of development where sections like the Scheduled Castes, Scheduled Tribes and Women were changed from being mere recipients of welfare programs to being active participants in the policies which shape their lives [@oommen04]. However, the poor continue to be underrepresented in the Panchayats of states like Tamil Nadu and Madhya Pradesh [@narayana2005]. Creating awareness through political mobilization was a key factor in contributing to the different outcomes between the states [@narayana2005].
+
+Similarly, in contexts outside of India, decentralized governance also yield mixed results. An analysis of pro-poor spending in participatory budgets in local governments of Brasil, Ireland, Chile, Mauritius and Costa Rica found that successful cases of participatory budgets were put in place when a pro-poor, left-of-center political party won power [@Brautigam04]. It has also been reported that municipalities with participatory processes do not perform better than municipalities without them in the short term [@boulding2010]. The study goes on to argue that the strong emphasis put on participatory governance by leftists and other institutions are misguided [@boulding2010]. An examination of the participatory budgeting in Solo, Indonesia finds that poor areas are discriminated more in terms of fund allocation, thereby indicating elite capture of the institutions [@grillos2017].
+
+While the literature remains mixed on the increase in welfare of marginalized communities by local governance institutions, it does tend to emphasize the political ideology of the ruling parties - with left-of-center parties associated with pro-poor spending, as exemplified by the study on participatory budgeting [@Brautigam04] and the success in the state of Kerala [@oommen04], which had followed left-of-center politics historically.
+
+*This study adds to this literature, with its examination of the importance of political ideology in determining the budgetary spending at the local level. While it might not be generalizable to other contexts, it does offer insights about socio-political history and political leaning of parties being significant drivers of welfare distribution not only at the national or international level, but also at the local level.*
+
+# Institutional Background
+Kerala is a state which actively implemented the decentralization and devolution of state powers after the Indian constitutional amendment in 1993. The Kerala Panchayat Raj Act of 1994 and the subsequent rules bring this devolution in to practice. The People's Campaign for Decentralized Planning (started in 1996) leveraged this new system of local self-governance to introduce a new planning framework where people could directly participate and decide the activities as well as schemes of the Panchayat [@isaac1997]. During the People's Planning Campaign, the government allocated 35 to 40 percent of its budget to the local bodies.
+
+Throughout the next 25 years, the participatory nature of Kerala's democratic decentralization has become ingrained in its social and cultural fabric. This is demonstrated in the elections to the three tiers of the Panchayats, which are given similar importance as the elections to the State legislative assembly. These elections are contested broadly by two coalitions: The Left leaning Left Democratic Front (LDF) led by the Communist Party of India (Marxist), and the center-right United Democratic Front (UDF) led by the Indian National Congress. While the far-right Bharatiya Janata Party does contest in elections within their coalition named National Democratic Alliance (NDA), their presence is still marginal with the state.
+
+The most marginalized sections of India's population are defined by articles 341 and 342 of the Indian constitution as 'Scheduled Castes (SC)' and 'Scheduled Tribes (ST)', consisting of historically and socio-politically depressed castes and tribes. In order to improve their socio-economic position, two plan components - Scheduled Caste Sub Plan (SCSP) and Tribal Sub Plan (TSP) are allocated yearly in the national budget, which trickles down to the local governing institutions. Therefore, the actual expenditure under SCSP and TSP can be taken as proxy for welfare programs towards marginalized sections.
+
+# Hypothesis
+As per the literature, left-leaning political parties tend to have more pro-poor and welfarist policies. Left-of-center political parties have also used decentralized governing bodies as platforms to launch more participatory welfarist policies like participatory budgeting in Porto Allegre of Brazil and the Participatory Planning Campaign in Kerala. Within this context, this study proposes the following hypothesis:
+
+**H~1~ : The LDF is more likely than UDF to spend more on the welfare of Marginalized sections when in power at the Panchayat level in Kerala**
+
+In addition to the political leaning of the ruling coalition, the percentage of the SC and ST can also affect the budget spend. Also, the COVID pandemic had severely affected welfare priorities, with most funding being diverted to medically preventative measures and other welfare emergencies caused by lockdowns. There can also be various other unobserved factors which can influence the welfarist intentions of elected representatives. These include the personal outlook of the elected representatives, civic awareness of the population, civil society, religious organizations and clubs (social network). Therefore, the key variables are:
+
+1.  Budget Spent
+
+2.  Ruling Coalition
+
+3.  COVID Year
+
+4.  Marginalized Population Percentage
+
+5.  Personal Outlook of Representatives
+
+6.  Civic Awareness
+
+7.  Social Networks
+
+These variables and their relationships are represented as a Directed Acyclic Graph in Figure 1.
+
+```{r dag}
+#| echo: false
+#| warning: false
+#| fig-cap: Directed Acyclic Graph of the causal mechanism
+
+library(dagitty)
+
+g1 <- dagitty("dag {
+Ruling_Coalition -> Budget_Spent
+CoViD_Year -> Budget_Spent
+Marginalized_Population -> Budget_Spent
+Personal_Outlook -> Budget_Spent
+Personal_Outlook -> Ruling_Coalition
+Civic_Awareness -> Budget_Spent
+Civic_Awareness -> Ruling_Coalition
+Social_Networks -> Budget_Spent
+Social_Networks -> Civic_Awareness
+Social_Networks -> Personal_Outlook
+Social_Networks -> Ruling_Coalition
+}"
+)
+
+plot(graphLayout(g1))
+
+```
+
+# Data
+The data for the research study is directly obtained from the websites of the Government of Kerala and the Government of India. Three main sets of data were collected for analysis: Data on the budget components, Data on the ruling coalition, and Data on the SC-ST population.
+
+### Data for the budget utilization of each panchayat
+
+This was obtained from the Plan Progress Dashboard, Department of Local Self-Government, Government of Kerala, available at <https://lsgkerala.gov.in/plandashboard/Plan/Planprogressdetails.php>.
+
+The data was collected from the year 2017-18 to 2022-23. The data for the year 2023-24 was not completely available for collection, and data older than 2017-18 is not available for digital access. From this, the budget spent on marginalized population was calculated as the percentage of the sum of the expenditure of the SCSP (SCP in the raw data) and TSP to the total expenditure of the Panchayat.
+
+### Data on the ruling coalition at each panchayat
+
+This was collected from Directory of Elected Representatives, Department of Local Self-Government, Government of Kerala available at <https://lsgkerala.gov.in/index.php/en/lbelection/lbelection/2020>. Data for the past two elections - held in 2020 and 2015 were considered, as they were the elections held during the time period for which the budget data was available. Each elected candidate was assigned to a coalition according to their party as per table 6 in the Appendix.
+
+From the coalitions, the INDEPENDENT and NDA coalitions were removed from analysis, as they were in power in too few Panchayats, only LDF and UDF ruled Panchayats were considered (refer table 7 in the appendix for seat distributions).
+
+### Data on the population percentage of SC and ST in each panchayat
+
+Data on the total percentage of the SC and ST was taken from the data of the National Rural Water Drinking Programme under the Department of Drinking Water and Sanitation within the Ministry of Jal Shakti of the Government of India, available at <https://ejalshakti.gov.in/IMISReports/Reports/BasicInformation/rpt_RWS_RuralPopulation_S.aspx?Rep=0&RP=Y>.
+
+The Population data is based on the census data of 2011, as newer data is unavailable as the 2021 census was not carried out due to the COVID pandemic, and the next census cycle is set for 2031. The marginalized population percentage was calculated as the percentage of the sum of the population of SC and ST to the total population of each Panchayat.
+
+
+|  Variable  |                                                                      Description                                                                       |           Unit           |
+|:--------------:|:--------------------------------------:|:--------------:|
+|   SPEND    | Represents the percentage of the entire expenditure which were set aside for projects catering to marginalized groups. Calculated by (SCP + TSP)/TOTAL | Percentage |
+| COALITION  |              Represents the ruling coalition at the local body. This variable represents whether the ruling power is LDF or not.              |          Binary          |
+| POPULATION |                                                     Represents the fraction of SC-ST population to the total.                                                      |   Fraction between 0 and 1   |
+|   COVID    |                Represents whether the year saw the outbreak of the COVID pandemic or not. Is true for 2020 and 2021, false for others.                 |          Binary          |
+
+: Description of the parameters of the model {.bordered}
+
+### Descriptive statistics
+
+The mean, median and standard deviation of the quantitative measures - the percentage of budget spend and the percentage of the marginalized groups in the population is given in table 2.
+
+```{r desc stat}
+#| echo: false
+#| warning: false
+#| tbl-cap: Descriptive statistics of quantitative measures
+library(gt)
+library(psych)
+library(dplyr)
+library(data.table)
+library(ggplot2)
+library(lmtest)
+library(plm)
+library(texreg)
+library(readxl)
+library(sandwich)
+library(car)
+library(stargazer)
+
+reg_data <- readRDS("full_reg_data.rds")
+
+sum_data <- as.data.table(describe(reg_data))
+
+sum_data[, variable := names(reg_data)]
+
+sum_data <- sum_data[,.(variable, min, max, mean, median, sd)]
+
+gt(sum_data[variable == "Marg_Spend_Perc" |
+            variable == "Tot_Marg_Pop"])
+```
+
+The correlation matrix of the variables is below:
+
+```{r corr}
+#| echo: false
+#| warning: false
+
+cor(reg_data[,.(Marg_Spend_Perc, is_LDF, cov_yr,
+                          Tot_Marg_Pop)])
+```
+Additional distributional diagrams of the variables and relationships between them are included in the appendix.
+
+# Empirical Strategy
+
+The collected data is then subject to an econometric analysis. I use the Ordinary Least Squares (OLS) regression to fit a model to the underlying data. The OLS would be useful for the distribution, as the measurable independent variables are not correlated to one another. The expectation of the outcome can then be expressed as a linear combination  of the predictors. OLS regression is simple to use and provides good estimates upon satisfying its assumptions.  The following OLS model is developed to test the hypothesis:
+
+SPEND = β~0~​ + β~1~ ​COALITION + β~2~ POPULATION + β~3~ COVID + ε
+
+The primary hypothesis aims to test the relationship between party coalition and spend. The population of the marginalized population can be an effective control as it can have an effect on the spend, since larger population size would demand larger share of the budget. The COVID pandemic had a huge impact on welfare budgeting, since funds were mostly utilized in healthcare related heads, and making sure of the availability of food due to the complete lockdown. This was done on a war-time basis, against the normal allocation of budgets. The model would need to account for this effect. The other explanatory variables represented in the DAG are hugely dependent on personal and community context. These are largely unmeasurable. But, they can cause endogeneity problems if these cause the explanatory variables in the model to correlate with the error term. To avoid this, I will include the use of a time fixed effects model, which would capture the time-variant unobserved factors which may cause endogeneity.
+
+Based on the literature, the model should indicate a positive relationship between the COALITION and SPEND, as left parties tend to spend more on welfare in general and are usually pro-poor. The POPULATION should also have a positive relationship, but I expect the COVID variable to have a negative relationship as funds would have been diverted to other heads during the pandemic.
+
+|    Estimator    |  Expected Relationship  |
+|:-----------:|:-----------:|
+|   COALITION    |     Positive     |
+|     POPULATION     |     Positive     |
+|     COVID     |     Negative     |
+: Expected relationships as per hypothesis
+
+# Diagnostic Tests
+
+### Non-linearity of individual terms
+
+In the simple OLS model, both the COALITION and the COVID variables are binary. Therefore, the linearity relationship is to be checked between SPEND and POPULATION while keeping the other two variables constant. This is checked in Figure 2.
+
+```{r non linear}
+#| echo: false
+#| warning: false
+#| fig-cap: Relationship between Population and Budget Spend controlled on Ruling coalition and effect of COVID
+ggplot(data=reg_data, aes(Tot_Marg_Pop, Marg_Spend_Perc)) + 
+  geom_point() +
+  geom_smooth(method = "loess") +
+  facet_grid(is_LDF ~ cov_yr, labeller = label_both) +
+  labs(x = "Population", y = "Spend")
+```
+
+As shown in Figure 2, the relationship is non-linear across all possible four values of COALITION and COVID. Therefore, I also estimate a model with a quadratic term of the population to account for the underlying non-linear distribution.
+
+```{r sq model}
+#| echo: false
+#| warning: false
+sq_model <- lm(Marg_Spend_Perc ~ is_LDF + cov_yr + Tot_Marg_Pop +
+                 I(Tot_Marg_Pop^2),reg_data)
+
+```
+
+### Heteroskedasticity
+
+Heteroskedasiticity can be assessed through a Breusch-Pagan test, which evaluates a null hypothesis of 'There is no heteroskedasticity'.
+
+```{r heteroske}
+#| echo: false
+#| warning: false
+bptest(sq_model)
+```
+
+The BP test gives a low p-value, hence the null hypothesis is rejected, indicating that heteroskedasticity does exist within the residuals. One possible solution to heteroskedasticity is to adjust the standard errors. A standard-error adjusted model is also estimated to account for this.
+
+```{r adj model}
+#| echo: false
+#| warning: false
+
+adj_sq_model <- coeftest(sq_model, vcov=vcovHC(sq_model, "HC3"))
+
+```
+
+
+### Normality of residuals
+
+The density plot of the residuals is plotted to check their underlying distribution.
+
+```{r dens norm}
+#| echo: false
+#| warning: false
+plot(density(residuals(sq_model)))
+```
+
+The density plot shows a near-normal distribution of the residuals, indicating that the assumptions of linear regression hold. Further, I also plot the q-q plot of the residuals against a normal distribution.
+
+```{r qq norm}
+#| echo: false
+#| warning: false
+qqnorm(residuals(sq_model))
+```
+
+The q-q plot also shows a near-normal distribution, as the sample quantiles match well with the theoretical quantiles thereby giving a plot along the diagonal.
+
+### Multicollinearity
+
+To check for multicollinearity, I check the VIF for each term in the model.
+
+```{r multico}
+#| echo: false
+#| warning: false
+
+vif(sq_model)
+```
+Only the population terms exhibit a relatively high VIF of 4. While this is not ideal, it is also not egregiously high. Some consider a VIF of above 5 non-acceptable, while others accept a VIF in the range of 1-10. Here, I choose to continue with this model while exercising caution in interpreting the results.
+
+### Autocorrelation
+
+The Durbin-Watson test is evaluated to test for autocorrelation.
+
+```{r autocorr}
+#| echo: false
+#| warning: false
+dwtest(sq_model)
+```
+
+The test returns a very low p-value, thereby the null hypothesis of 'There is no autocorrelation' has to be rejected. This is mostly due to the dataset being panel data. Therefore, I evaluate a fixed effects model, with estimations using 'Time fixed effects'. I use the time fixed effects model, as the unobserved variables are constant across entities but vary over time. I also evaluate an additional model containing a time-lagged variable of the spend, which also additionally accounts for autocorrelation. All of these models are estimated and the results summarized in the next chapter.
+
+```{r fix and lag model}
+#| echo: false
+#| warning: false
+fixed_model <- plm(Marg_Spend_Perc ~ is_LDF + cov_yr + Tot_Marg_Pop +
+                     I(Tot_Marg_Pop^2),
+                   data =  reg_data,
+                   index = c("LB_Name","Year"),
+                   model = "within",
+                   effect = "time")
+
+lag <- reg_data$Marg_Spend_Perc
+reg_data$spend_lag[2:2772] <- lag[1:2771]
+
+reg_data[Year == 2017 , spend_lag := NA]
+
+lag_model <- plm(Marg_Spend_Perc ~ spend_lag + is_LDF + cov_yr +
+                   Tot_Marg_Pop + I(Tot_Marg_Pop^2),
+                 data =  reg_data,
+                 index = c("LB_Name","Year"),
+                 model = "within",
+                 effect = "time")
+
+```
+
+# Results
+
+The results of the OLS regression of the econometric model from the simple, the multiple, the quadratic and the error adjusted models are summarized in table 4.
+
+```{r models 1-4}
+#| echo: false
+#| warning: false
+#| tbl-cap: Simple Regression, Multiple Regression, Quadratic Model and error adjusted model
+sim_model <- lm(Marg_Spend_Perc ~ is_LDF, reg_data)
+
+mult_model <- lm(Marg_Spend_Perc ~ is_LDF + cov_yr + Tot_Marg_Pop, reg_data)
+
+library(jtools)
+
+export_summs(sim_model,mult_model,sq_model, adj_sq_model)
+
+```
+As can be seen, the political orientation of the ruling coalition has a low p-value in all models, leading to the rejection of the null hypothesis. These models thus indicate that the political orientation of the ruling coalition is a significant predictor of the budget spend on welfare plans for the SCs and STs.
+
+The time fixed effects and lagged fixed effects models are summarized in table 5.
+
+```{r models 5,6}
+#| echo: false
+#| warning: false
+#| tbl-cap: Time fixed effects and lagged fixed effects models
+
+library(huxtable)
+huxreg(fixed_model,lag_model)
+
+```
+
+While the political orientation variable remains significant in the time fixed effects model, it loses significance in the lagged fixed effects model. In its place, the time-lagged variable gains significance. This can be due to the reason that the budget expenditure in a Panchayat does not vary significantly through the years. Therefore, the budget expenditure of the previous year is a significantly good predictor of the expenditure of the upcoming year. At the same time, it is interesting to note that that even a change in government (from UDF to LDF or vice-versa) does not account for a significant change in budget from the previous year, as the political ideology variable loses significance.
+
+The percentage of the marginalized population remains significant throughout all six models. This indicates a strong effect of the population percentage of SCs and STs on the budget spent on their welfare. This may be due to the implementation of reservation policies in the local body elections, where a specific number of wards (divisions within the Panchayat) are exclusively reserved for SC/ST candidates. This number is decided according to the population of SC/ST within the Panchayat. A closer look at Figure 2 also reveals that although spending on welfare increases in step with the increase in population, it gradually plateaus around the 30% mark and then there is a negative trend.
+
+As for the original hypothesis, it can be seen that being ruled by the Leftist LDF coalition tends to increase the budget spend percentage by 0.7, which remains statistically significant across multiple models. However, a change from LDF to UDF or vice-versa would not result in a radical increase/decrease in the budget spend, as both coalitions tend to hover around the previous allocations of the budget portions.
+
+It can also be seen that the COVID years have a negative effect, but it is not a statistically significant effect to lead to any conclusions on the effect of the COVID pandemic on the budget allocations.
+
+# Limitations
+
+A limitation of this model is that it does not capture the expenditure which is outside the SCP and TSP, but can still be aimed towards benefiting the marginalized sections. Since a great many programs and funds are devolved to the Panchayats both from the state and the national level, programs which ultimately benefit the same population can end up in alternate budget heads. Without going through the data of all programs implemented in all individual Panchayats, this cannot be completely understood.
+
+I also emphasize that these results are highly context dependent, and thus cannot be generalized. The nature of marginalized groups, their classification and various governance programs aimed at their welfare change according to the governance context. Hence, this cannot be taken as a generalizable result outside of the state of Kerala in India.
+
+It is also to be noted that the analysis is based on the budget data that is reported by the Panchayats themselves. Whether the entire amount that has been reported to be spent on the projects benefiting the SC-ST sections has in reality been spent or not is a pertinent question, one which this study cannot answer.
+
+# Future Research
+
+Future Research can concentrate on more granular data of the population as well as the actual expenditure which reaches the marginalized communities. The population data which this study has used is in no way perfect - there were Panchayats who names were missing, due to which they had to be dropped completely from the analysis. The data is also based on 2011 census, as the 2021 census was not carried out in India due to the pandemic. Therefore, the population might be different in the time-period of analysis. This study can be conducted again with granular, updated data when the new population figures are available. Better control or proxies can also be used to improve analysis.
+
+There is also the possibility to focus on individual political parties within coalitions, as the political alignment of coalition parties do tend to vary as per needs of the served population. While the two coalitions can serve as good proxies for political alignment, moving the units of analysis to individual parties may also throw up interesting insights. Another interesting aspect to look at would be whether Panchayats which have their president posts 'reserved' for SC/STs show any difference in the allocation of budgets. The reservations of the posts for president are allocated by the state election commission ahead of each election cycle.
+
+# Discussion and Conclusion
+
+The key finding of this study is that it can be seen that being ruled by the Leftist LDF coalition tends to increase the budget spend percentage by an average of 0.7, which remains statistically significant across multiple models. However, a change from LDF to UDF or vice-versa would not result in a radical increase/decrease in the budget spend, as both coalitions tend to hover around the previous allocations of the budget portions. This indicates that, in the context of Kerala, while the two coalitions (LDF and UDF) are not that far apart with regards to their welfare spending, there is an increased spending in LDF ruled Panchayats. Additionally, the population of the marginalized sections is highly correlated with the budget spend. However, as the population increases, the budget spent on them seems to plateau and then decrease when the percentage increases above 35%. This can indicate that the marginalized sections are getting their fair share, and policies like the reservation of seats in the local body elections for SC and ST sections may be effective in ensuring their representation. However, there seems to be an upper cap to what local governments are willing to spend on welfare plans for the marginalized, regardless of their increased vote share.
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix {.appendix}
+
+|    Party    |  Coalition  |
+|:-----------:|:-----------:|
+|   CPI(M)    |     LDF     |
+|     INC     |     UDF     |
+|     BJP     |     NDA     |
+|     CPI     |     LDF     |
+| INDEPENDENT | INDEPENDENT |
+|     SP      | INDEPENDENT |
+|    KC(M)    |     LDF     |
+|  KC(M)PJJ   |     UDF     |
+|  Twenty20   | INDEPENDENT |
+|    IUML     |     UDF     |
+|    JD(S)    |     LDF     |
+|    RMPI     |     UDF     |
+|     LJD     |     LDF     |
+|     INL     |     LDF     |
+|    JD(U)    |     LDF     |
+|    KC(S)    |     UDF     |
+
+: Party Coalitions in Kerala
+
+
+|  Coalition  | Number of Panchayats in Power in 2015 | Number of Panchayats in Power in 2020 |
+|:----------------:|:-------------------------:|:-------------------------:|
+|     LDF     |                  527                  |                  531                  |
+|     UDF     |                  323                  |                  311                  |
+|     NDA     |                  17                   |                  12                   |
+| INDEPENDENT |                  32                   |                  45                   |
+
+: Coalitions in Power in Panchayats after 2015 and 2020 elections
+
+```{r spend hist}
+#| echo: false
+#| warning: false
+#| fig-cap: Distribution of the Budget spend
+
+ggplot(reg_data, aes(Marg_Spend_Perc)) +
+  geom_histogram()
+
+```
+
+```{r pop hist}
+#| echo: false
+#| warning: false
+#| fig-cap: Distribution of the SC-ST Population
+
+ggplot(reg_data, aes(Tot_Marg_Pop)) +
+  geom_histogram()
+```
+
+```{r spend coalition}
+#| echo: false
+#| warning: false
+#| fig-cap: Distribution of the Budget according to the ruling coalition
+
+ggplot(reg_data, aes(is_LDF, Marg_Spend_Perc)) +
+  geom_boxplot()
+```
+
+```{r spend coalition covid}
+#| echo: false
+#| warning: false
+#| fig-cap: Distribution of the Budget according to the ruling coalition controlled by COVID year
+
+ggplot(reg_data, aes(is_LDF, Marg_Spend_Perc)) +
+  geom_boxplot() +
+  facet_wrap(~cov_yr, labeller = label_both)
+```
+
+
+
+
